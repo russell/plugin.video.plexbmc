@@ -3495,7 +3495,7 @@ def shelf( server_list=None ):
             WINDOW.setProperty("Plexbmc.LatestEpisode.%s.Thumb" % seasonCount, title_thumb)
             seasonCount += 1
 
-        printDebug.debug(" Building Recent window title: %s\n        Building Recent window url: %s\n        Building Recent window thumb: %s" % (title_name, title_url, title_thumb))
+        printDebug.debug(" Building Recent window title: %s\n        Building Recent window url: %s\n        Building Recent window thumb: %s" % (title_name, title_url, title_thumb.encode('UTF-8')))
 
     clearShelf( movieCount, seasonCount, musicCount)
 
